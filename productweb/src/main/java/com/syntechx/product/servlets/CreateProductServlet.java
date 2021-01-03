@@ -18,16 +18,17 @@ import org.springframework.web.context.support.WebApplicationContextUtils;
  * Servlet implementation class CreateProductServlet
  */
 public class CreateProductServlet extends HttpServlet {
+	
 	private static final long serialVersionUID = 1L;
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-
+		
 		Integer id = Integer.parseInt(request.getParameter("id"));
 		String name = request.getParameter("name");
 		String description = request.getParameter("description");
 		Integer price = Integer.parseInt(request.getParameter("price"));
-
+		
 		Product product = new Product();
 		product.setId(id);
 		product.setName(name);
