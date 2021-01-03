@@ -14,8 +14,8 @@ Creates a standalone maven Java project using the archetype `maven-archetype-qui
     - `groupId` - package name where our project that we're creating will be stored in the maven repo
     - `artifactId` - name of our project
     - `archetypeArtifactId` - what type of project are we creating?
-    - `maven-archetype-quickstart` - standalone java project
-    - `maven-archetype-webapp` - webapp
+      - `maven-archetype-quickstart` - standalone java project
+      - `maven-archetype-webapp` - webapp
     - `interactiveMode` - on by default so set to false when running this (you'd need to input these dynamically otherwise)
 
 Compile/build, clean, run tests, and package the project. This creates a target folder and puts all the compiled files into here.
